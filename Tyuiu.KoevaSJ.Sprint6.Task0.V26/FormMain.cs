@@ -19,35 +19,41 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task0.V26
             InitializeComponent();
         }
 
-        private void buttonDone_Click(object sender, EventArgs e)
-        {
-            DataService ds = new DataService();
-            try
-            {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX.Text)));
-            }
-            catch
-            {
-                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
-        private void textBoxVarX_KeyPress(object sender, KeyEventHandler e)
+       
+
+        
+
+        private void textBoxVarX_KSJ_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <=47 || e.KeyChar >= 58 ) && (e.KeyChar != ',') && (e.KeyChar != 8))
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
                 e.Handled = true;
             }
         }
 
-        private void buttonHelp_Click(object sender, EventArgs e)
+        private void textBoxVarX_KSJ_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHelp_KSJ_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнила студентка группы АСОиУб-23-1 Коева Софья Юрьевна", "Сообщение");
         }
 
-        private void texBoxVarX_TextChanged(object sender, EventArgs e)
+        private void buttonDone_KSJ_Click(object sender, EventArgs e)
         {
-
+            DataService ds = new DataService();
+            try
+            {
+                textBoxResult_KSJ.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_KSJ.Text)));
+            }
+            catch
+            {
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
