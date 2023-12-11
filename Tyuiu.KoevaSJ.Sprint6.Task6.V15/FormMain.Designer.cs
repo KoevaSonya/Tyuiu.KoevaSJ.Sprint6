@@ -32,26 +32,26 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task6.V15
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBox_KSJ = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBoxTask_KSJ = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.groupBoxOutPutData_KSJ = new System.Windows.Forms.GroupBox();
-            this.groupBoxResult_KSJ = new System.Windows.Forms.GroupBox();
-            this.textBoxInPutData_KSJ = new System.Windows.Forms.TextBox();
-            this.textBoxOutPutData_KSJ = new System.Windows.Forms.TextBox();
-            this.textBoxTask_KSJ = new System.Windows.Forms.TextBox();
-            this.openFileDialog_KSJ = new System.Windows.Forms.OpenFileDialog();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.buttonAbout_KSJ = new System.Windows.Forms.Button();
             this.buttonDone_KSJ = new System.Windows.Forms.Button();
             this.buttonOpenFile_KSJ = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBoxTask_KSJ = new System.Windows.Forms.GroupBox();
+            this.textBoxTask_KSJ = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBoxOutPutData_KSJ = new System.Windows.Forms.GroupBox();
+            this.textBoxInPutData_KSJ = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBoxResult_KSJ = new System.Windows.Forms.GroupBox();
+            this.textBoxOutPutData_KSJ = new System.Windows.Forms.TextBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.openFileDialog_KSJ = new System.Windows.Forms.OpenFileDialog();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox_KSJ.SuspendLayout();
             this.groupBoxTask_KSJ.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.groupBoxOutPutData_KSJ.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBoxResult_KSJ.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,102 +65,6 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task6.V15
             this.groupBox_KSJ.Size = new System.Drawing.Size(1673, 111);
             this.groupBox_KSJ.TabIndex = 0;
             this.groupBox_KSJ.TabStop = false;
-            // 
-            // groupBoxTask_KSJ
-            // 
-            this.groupBoxTask_KSJ.Controls.Add(this.textBoxTask_KSJ);
-            this.groupBoxTask_KSJ.Location = new System.Drawing.Point(12, 117);
-            this.groupBoxTask_KSJ.Name = "groupBoxTask_KSJ";
-            this.groupBoxTask_KSJ.Size = new System.Drawing.Size(1655, 136);
-            this.groupBoxTask_KSJ.TabIndex = 3;
-            this.groupBoxTask_KSJ.TabStop = false;
-            this.groupBoxTask_KSJ.Text = "Условие";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBoxOutPutData_KSJ);
-            this.panel1.Location = new System.Drawing.Point(12, 259);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(815, 507);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.groupBoxResult_KSJ);
-            this.panel2.Controls.Add(this.splitter1);
-            this.panel2.Location = new System.Drawing.Point(833, 259);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(840, 507);
-            this.panel2.TabIndex = 0;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 507);
-            this.splitter1.TabIndex = 0;
-            this.splitter1.TabStop = false;
-            // 
-            // groupBoxOutPutData_KSJ
-            // 
-            this.groupBoxOutPutData_KSJ.Controls.Add(this.textBoxInPutData_KSJ);
-            this.groupBoxOutPutData_KSJ.Location = new System.Drawing.Point(16, 16);
-            this.groupBoxOutPutData_KSJ.Name = "groupBoxOutPutData_KSJ";
-            this.groupBoxOutPutData_KSJ.Size = new System.Drawing.Size(784, 488);
-            this.groupBoxOutPutData_KSJ.TabIndex = 1;
-            this.groupBoxOutPutData_KSJ.TabStop = false;
-            this.groupBoxOutPutData_KSJ.Text = "Ввод";
-            // 
-            // groupBoxResult_KSJ
-            // 
-            this.groupBoxResult_KSJ.Controls.Add(this.textBoxOutPutData_KSJ);
-            this.groupBoxResult_KSJ.Location = new System.Drawing.Point(3, 16);
-            this.groupBoxResult_KSJ.Name = "groupBoxResult_KSJ";
-            this.groupBoxResult_KSJ.Size = new System.Drawing.Size(831, 472);
-            this.groupBoxResult_KSJ.TabIndex = 0;
-            this.groupBoxResult_KSJ.TabStop = false;
-            this.groupBoxResult_KSJ.Text = "Вывод";
-            // 
-            // textBoxInPutData_KSJ
-            // 
-            this.textBoxInPutData_KSJ.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBoxInPutData_KSJ.Location = new System.Drawing.Point(6, 46);
-            this.textBoxInPutData_KSJ.Multiline = true;
-            this.textBoxInPutData_KSJ.Name = "textBoxInPutData_KSJ";
-            this.textBoxInPutData_KSJ.ReadOnly = true;
-            this.textBoxInPutData_KSJ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxInPutData_KSJ.Size = new System.Drawing.Size(772, 436);
-            this.textBoxInPutData_KSJ.TabIndex = 0;
-            // 
-            // textBoxOutPutData_KSJ
-            // 
-            this.textBoxOutPutData_KSJ.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBoxOutPutData_KSJ.Location = new System.Drawing.Point(6, 46);
-            this.textBoxOutPutData_KSJ.Multiline = true;
-            this.textBoxOutPutData_KSJ.Name = "textBoxOutPutData_KSJ";
-            this.textBoxOutPutData_KSJ.ReadOnly = true;
-            this.textBoxOutPutData_KSJ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutPutData_KSJ.Size = new System.Drawing.Size(825, 426);
-            this.textBoxOutPutData_KSJ.TabIndex = 1;
-            // 
-            // textBoxTask_KSJ
-            // 
-            this.textBoxTask_KSJ.Location = new System.Drawing.Point(6, 30);
-            this.textBoxTask_KSJ.Multiline = true;
-            this.textBoxTask_KSJ.Name = "textBoxTask_KSJ";
-            this.textBoxTask_KSJ.ReadOnly = true;
-            this.textBoxTask_KSJ.Size = new System.Drawing.Size(1629, 100);
-            this.textBoxTask_KSJ.TabIndex = 2;
-            this.textBoxTask_KSJ.Text = resources.GetString("textBoxTask_KSJ.Text");
-            // 
-            // openFileDialog_KSJ
-            // 
-            this.openFileDialog_KSJ.FileName = "openFileDialog1";
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip1.ToolTipTitle = "Подсказка";
             // 
             // buttonAbout_KSJ
             // 
@@ -195,6 +99,102 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task6.V15
             this.buttonOpenFile_KSJ.UseVisualStyleBackColor = true;
             this.buttonOpenFile_KSJ.Click += new System.EventHandler(this.buttonOpenFile_KSJ_Click);
             // 
+            // groupBoxTask_KSJ
+            // 
+            this.groupBoxTask_KSJ.Controls.Add(this.textBoxTask_KSJ);
+            this.groupBoxTask_KSJ.Location = new System.Drawing.Point(12, 117);
+            this.groupBoxTask_KSJ.Name = "groupBoxTask_KSJ";
+            this.groupBoxTask_KSJ.Size = new System.Drawing.Size(1655, 136);
+            this.groupBoxTask_KSJ.TabIndex = 3;
+            this.groupBoxTask_KSJ.TabStop = false;
+            this.groupBoxTask_KSJ.Text = "Условие";
+            // 
+            // textBoxTask_KSJ
+            // 
+            this.textBoxTask_KSJ.Location = new System.Drawing.Point(6, 30);
+            this.textBoxTask_KSJ.Multiline = true;
+            this.textBoxTask_KSJ.Name = "textBoxTask_KSJ";
+            this.textBoxTask_KSJ.ReadOnly = true;
+            this.textBoxTask_KSJ.Size = new System.Drawing.Size(1629, 100);
+            this.textBoxTask_KSJ.TabIndex = 2;
+            this.textBoxTask_KSJ.Text = resources.GetString("textBoxTask_KSJ.Text");
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBoxOutPutData_KSJ);
+            this.panel1.Location = new System.Drawing.Point(12, 259);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(815, 507);
+            this.panel1.TabIndex = 0;
+            // 
+            // groupBoxOutPutData_KSJ
+            // 
+            this.groupBoxOutPutData_KSJ.Controls.Add(this.textBoxInPutData_KSJ);
+            this.groupBoxOutPutData_KSJ.Location = new System.Drawing.Point(16, 16);
+            this.groupBoxOutPutData_KSJ.Name = "groupBoxOutPutData_KSJ";
+            this.groupBoxOutPutData_KSJ.Size = new System.Drawing.Size(784, 488);
+            this.groupBoxOutPutData_KSJ.TabIndex = 1;
+            this.groupBoxOutPutData_KSJ.TabStop = false;
+            this.groupBoxOutPutData_KSJ.Text = "Ввод";
+            // 
+            // textBoxInPutData_KSJ
+            // 
+            this.textBoxInPutData_KSJ.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBoxInPutData_KSJ.Location = new System.Drawing.Point(6, 46);
+            this.textBoxInPutData_KSJ.Multiline = true;
+            this.textBoxInPutData_KSJ.Name = "textBoxInPutData_KSJ";
+            this.textBoxInPutData_KSJ.ReadOnly = true;
+            this.textBoxInPutData_KSJ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxInPutData_KSJ.Size = new System.Drawing.Size(772, 436);
+            this.textBoxInPutData_KSJ.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBoxResult_KSJ);
+            this.panel2.Controls.Add(this.splitter1);
+            this.panel2.Location = new System.Drawing.Point(833, 259);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(840, 507);
+            this.panel2.TabIndex = 0;
+            // 
+            // groupBoxResult_KSJ
+            // 
+            this.groupBoxResult_KSJ.Controls.Add(this.textBoxOutPutData_KSJ);
+            this.groupBoxResult_KSJ.Location = new System.Drawing.Point(3, 16);
+            this.groupBoxResult_KSJ.Name = "groupBoxResult_KSJ";
+            this.groupBoxResult_KSJ.Size = new System.Drawing.Size(831, 472);
+            this.groupBoxResult_KSJ.TabIndex = 0;
+            this.groupBoxResult_KSJ.TabStop = false;
+            this.groupBoxResult_KSJ.Text = "Вывод";
+            // 
+            // textBoxOutPutData_KSJ
+            // 
+            this.textBoxOutPutData_KSJ.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBoxOutPutData_KSJ.Location = new System.Drawing.Point(6, 46);
+            this.textBoxOutPutData_KSJ.Multiline = true;
+            this.textBoxOutPutData_KSJ.Name = "textBoxOutPutData_KSJ";
+            this.textBoxOutPutData_KSJ.ReadOnly = true;
+            this.textBoxOutPutData_KSJ.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxOutPutData_KSJ.Size = new System.Drawing.Size(825, 426);
+            this.textBoxOutPutData_KSJ.TabIndex = 1;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 507);
+            this.splitter1.TabIndex = 0;
+            this.splitter1.TabStop = false;
+            // 
+            // openFileDialog_KSJ
+            // 
+            this.openFileDialog_KSJ.FileName = "openFileDialog1";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Подсказка";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -204,15 +204,16 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task6.V15
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBoxTask_KSJ);
             this.Controls.Add(this.groupBox_KSJ);
+            this.MinimumSize = new System.Drawing.Size(1711, 849);
             this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 6 | Вариант 15 | Коева С.Ю";
             this.groupBox_KSJ.ResumeLayout(false);
             this.groupBoxTask_KSJ.ResumeLayout(false);
             this.groupBoxTask_KSJ.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.groupBoxOutPutData_KSJ.ResumeLayout(false);
             this.groupBoxOutPutData_KSJ.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.groupBoxResult_KSJ.ResumeLayout(false);
             this.groupBoxResult_KSJ.PerformLayout();
             this.ResumeLayout(false);

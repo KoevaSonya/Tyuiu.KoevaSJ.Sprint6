@@ -38,7 +38,7 @@ namespace Tyuiu.KoevaSJ.Sprint6.Task6.V15
 
         private void buttonDone_KSJ_Click(object sender, EventArgs e)
         {
-            textBoxInPutData_KSJ.Text = ds.CollectTextFromFile(openFilePath);
+            textBoxOutPutData_KSJ.Text = ds.CollectTextFromFile(openFilePath);
         }
 
         private void buttonAbout_KSJ_Click(object sender, EventArgs e)
